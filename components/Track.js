@@ -108,9 +108,14 @@ class Track extends React.Component<Props> {
               </ul>
               <h4>Example tasks:</h4>
               <ul>
-                {currentMilestone.examples.map((example, i) => (
-                  <li key={i}>{example}</li>
-                ))}
+                {currentMilestone.examples
+                  .filter(
+                    (example) =>
+                      example.length && !example.includes("~~[draft]")
+                  )
+                  .map((example, i) => (
+                    <li key={i}>{example}</li>
+                  ))}
               </ul>
             </div>
           ) : null}

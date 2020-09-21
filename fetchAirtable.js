@@ -2,7 +2,6 @@ const firebase = require("firebase");
 const Airtable = require("airtable");
 
 firebase.initializeApp({
-  apiKey: "AIzaSyAm-CBn0rrHO2aRAfHsrX3QP5_q4S1W2Ak",
   authDomain: "getaround-snowflake.firebaseapp.com",
   databaseURL: "https://getaround-snowflake.firebaseio.com",
   projectId: "getaround-snowflake",

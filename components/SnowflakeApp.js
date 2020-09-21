@@ -17,9 +17,6 @@ import type { Milestone, MilestoneMap, TrackId } from "../constants";
 import React from "react";
 import TitleSelector from "../components/TitleSelector";
 
-import { fetchTracks } from "../constants";
-fetchTracks();
-
 type SnowflakeAppState = {
   milestoneByTrack: MilestoneMap,
   name: string,
@@ -65,10 +62,15 @@ const emptyState = (): SnowflakeAppState => {
     name: "",
     title: "",
     milestoneByTrack: {
+      ARCHITECTURE: 0,
+      QUALITY: 0,
       PROJECT_OWNERSHIP: 0,
       COMMUNICATION: 0,
+      INITIATIVE: 0,
+      MENTORSHIP: 0,
+      WELLBEING: 0,
     },
-    focusedTrackId: "PROJECT_OWNERSHIP",
+    focusedTrackId: "ARCHITECTURE",
   };
 };
 
@@ -77,10 +79,15 @@ const defaultState = (): SnowflakeAppState => {
     name: "Han Solo",
     title: "Senior Engineer",
     milestoneByTrack: {
-      PROJECT_OWNERSHIP: 2,
-      COMMUNICATION: 1,
+      ARCHITECTURE: 0,
+      QUALITY: 0,
+      PROJECT_OWNERSHIP: 0,
+      COMMUNICATION: 0,
+      INITIATIVE: 0,
+      MENTORSHIP: 0,
+      WELLBEING: 0,
     },
-    focusedTrackId: "PROJECT_OWNERSHIP",
+    focusedTrackId: "ARCHITECTURE",
   };
 };
 

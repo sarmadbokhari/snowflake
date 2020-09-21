@@ -76,7 +76,7 @@ const emptyState = (): SnowflakeAppState => {
 
 const defaultState = (): SnowflakeAppState => {
   return {
-    name: "Han Solo",
+    name: "Engineer Name",
     milestoneByTrack: {
       ARCHITECTURE: 0,
       QUALITY: 0,
@@ -131,6 +131,9 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             width: 960px;
             margin: 0 auto;
           }
+          p {
+            color: #333;
+          }
           .name-input {
             border: none;
             display: block;
@@ -140,6 +143,8 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             font-weight: bold;
             width: 380px;
             margin-bottom: 10px;
+            text-align: center;
+            margin-top: 10px;
           }
           .name-input:hover,
           .name-input:focus {
@@ -150,15 +155,35 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             color: #888;
             text-decoration: none;
           }
+          a svg:hover {
+            fill: #b01aa7;
+          }
         `}</style>
-        <div style={{ margin: "19px auto 0", width: 142 }}>
-          <a href="https://getaround.com/" target="_blank">
-            <Wordmark />
-          </a>
+        <div style={{ margin: "19px auto 0", width: 200 }}>
+          <Wordmark />
         </div>
+        <a
+          href="https://getaround.slack.com/archives/C02FW0D79/p1600714402008200?thread_ts=1600714348.008100&cid=C02FW0D79"
+          target="_blank"
+          style={{ position: "absolute", top: 20, right: 20 }}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="gray"
+            width="20px"
+            height="20px"
+          >
+            <path
+              fillRule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </a>
         <div>
           <div>
-            <form>
+            <form style={{ display: "flex", justifyContent: "center" }}>
               <input
                 type="text"
                 className="name-input"

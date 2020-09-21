@@ -106,6 +106,7 @@ export let tracks: Tracks = {
       "Develops expertise and brings experienced judgement to the abstraction and design of software systems",
     displayName: "Architecture",
     id: "ARCHITECTURE",
+    category: "A",
     milestones: [
       {
         examples: [
@@ -179,81 +180,80 @@ export let tracks: Tracks = {
       },
     ],
   },
-  COMMUNICATION: {
+  QUALITY: {
     description:
-      "Listens effectively, then shares the right amount of information with the right people, at the right time.",
-    displayName: "Communication",
-    id: "COMMUNICATION",
+      "Embodies and promotes practices to ensure excellent quality products and services",
+    displayName: "Quality",
+    id: "QUALITY",
+    category: "A",
     milestones: [
       {
         examples: [
-          "~~[draft] Updated The Watch before running a backfill~~\n",
-          "Keeps status of Jira tickets up to date\n",
-          "Writes well-structured commit messages\n",
+          "Caught a bug before it went live\n",
+          "Landed non-trivial PR with only style-related comments\n",
+          "Wrote hermetic tests for the happy and sad cases\n",
         ],
         signals: [
-          "Communicates project status clearly and effectively\n",
-          "Collaborates with others with empathy\n",
-          "Asks for help at the appropriate juncture\n",
+          "Tests new code thoroughly, both locally, and in production once shipped\n",
+          "Writes tests for every new feature and bug fix\n",
+          "Writes clear comments and documentation\n",
         ],
-        summary:
-          "Communicates effectively with close stakeholders when called upon, and incorporates constructive feedback",
+        summary: "Delivers consistently good quality work",
       },
       {
         examples: [
-          "Received and integrated critical feedback on a rushed PR positively\n",
-          "Created cross-team Slack channel for a new Spirit page\n",
-          "Collected comments from domain experts on an EDD and incorporated them into the chosen approach\n",
+          "Requested tests for a PR when acting as reviewer\n",
+          "Cleared a sticky set of Sentry errors\n",
+          "",
         ],
         signals: [
-          "Practises active listening, seeking to understand before being understood.\n",
-          "Ensures stakeholders are aware of current blockers\n",
-          "Chooses the appropriate tools for accurate and timely communication\n",
+          "Consistently writes readable, easily testable, performant code\n",
+          "Adds tests for uncovered areas\n",
+          "Deletes unnecessary code and deprecates proactively when safe to do so\n",
         ],
         summary:
-          "Communicates with the wider team appropriately, focusing on timeliness and good quality conversations",
+          "Increases the robustness and reliability of codebases, and devotes time to polishing products and systems",
       },
       {
         examples: [
-          "Directed team response effectively during several outages\n",
-          "Gave a substantial EPDD-wide presentation on the Charges Service\n",
-          "Created a new collaborative doc to automate status updates from the team\n",
+          "~~[draft] Improved PRB to run the same volume of tests faster~~\n",
+          "Integrated linter and static analyzer for PRs\n",
+          "~~[draft] Created fixture system for visual quality~~\n",
         ],
         signals: [
-          "Resolves communication difficulties between others\n",
-          "Anticipates and shares schedule deviations in plenty of time\n",
-          "Attends to inclusive communication practices on their team\n",
+          "Implements systems that enable better testing\n",
+          "Gives thoughtful code reviews as a domain expert\n",
+          "Adds tooling to improve code quality\n",
         ],
-        summary:
-          "Proactively shares information, actively solicits feedback, and facilitates communication for multiple stakeholders",
+        summary: "Improves others' ability to deliver great quality work",
       },
       {
         examples: [
-          "Lead off-site workshop on interviewing\n",
-          "Wrote Getaround's growth framework and rationale\n",
-          "Aligned the entire organization around a meeting or process format\n",
+          "Added code coverage reporting to iOS CI pipeline\n",
+          "~~[draft] Iterated repeatedly to develop Getaround's underlines solution~~\n",
+          "~~[draft] Defined and oversaw plan for closing Heartbleed vulnerability~~\n",
         ],
         signals: [
-          "Communicates project risk and tradeoffs skillfully and with nuance\n",
-          "Contextualizes and clarifies ambiguous direction and strategy for others\n",
-          "Negotiates resourcing compromises with other teams\n",
+          "Builds systems so as to eliminate entire classes of programmer error\n",
+          "Focuses the team on quality with regular reminders\n",
+          "Coordinates on-call priorities and projects\n",
         ],
         summary:
-          "Communicates complex ideas skillfully and with nuance, and establishes alignment within the wider organization",
+          "Advocates for and models great quality with proactive actions, and tackles difficult and subtle system issues",
       },
       {
         examples: [
-          "Managed themes and speakers for half year check-in company offsite\n",
-          "Created the communication plan for a substantial restructuring of team technical scopes\n",
-          "Presented to the board about key company metrics and projects\n",
+          "~~[draft] Negotiated resources for Fix-It week with exec team~~\n",
+          "~~[draft] Instituted and ensured success of a 20% time policy~~\n",
+          "~~[draft] Started The Watch~~\n",
         ],
         signals: [
-          "Defines processes for clear communication for the entire team\n",
-          "Shares the right amount of information with the right people, at the right time\n",
-          "Develops and delivers plans to execs, the board, or outside investors\n",
+          "Defines policies for the engineering org that encourage quality work\n",
+          "Identifies and eliminates single points of failure throughout the organization\n",
+          "Secures time and resources from execs to support great quality\n",
         ],
         summary:
-          "Influences outcomes at the highest level, moves beyond mere broadcasting, and sets best practices for others",
+          "Enables and encourages the entire organization to make quality a central part of the development process",
       },
     ],
   },
@@ -262,6 +262,7 @@ export let tracks: Tracks = {
       "Challenges the status quo and effects positive organizational change outside of mandated work",
     displayName: "Initiative",
     id: "INITIATIVE",
+    category: "B",
     milestones: [
       {
         examples: [
@@ -335,11 +336,87 @@ export let tracks: Tracks = {
       },
     ],
   },
+  PROJECT_OWNERSHIP: {
+    description:
+      "Delivers well-scoped programs of work that meet their goals, on time, to budget, harmoniously",
+    displayName: "Project Ownership",
+    id: "PROJECT_OWNERSHIP",
+    category: "B",
+    milestones: [
+      {
+        examples: [
+          "Delivered a new feature within an existing app view, based on EDD\n",
+          "Scoped and implemented a simple new GET endpoint\n",
+          "~~[draft] Delivered payment history dashboard~~\n",
+        ],
+        signals: [
+          "Estimates small tasks accurately\n",
+          "Delivers tightly-scoped projects efficiently\n",
+          "Writes effective technical specs outlining approach\n",
+        ],
+        summary: "Effectively delivers single tasks\n",
+      },
+      {
+        examples: [
+          "Wrote the EDD for a major phase of a long-running project\n",
+          "Scoped and implemented an endpoint with a novel resource nesting scheme\n",
+          "Added new library and introduced it to the guild\n",
+        ],
+        signals: [
+          "Researches and effectively documents a technical decision between multiple alternatives\n",
+          "Balances pragmatism and polish appropriately\n",
+          "Defines and hits interim milestones\n",
+        ],
+        summary: "Effectively delivers individual projects\n",
+      },
+      {
+        examples: [
+          "Reduced variability of completion estimate by refactoring and frontloading risky project phases \n",
+          "Completed launch checklist proactively for well-controlled rollout\n",
+          "Facilitated project kickoff meeting to get buy-in\n",
+        ],
+        signals: [
+          "Delegates tasks to others appropriately\n",
+          "Integrates business needs into project planning\n",
+          "Chooses appropriate project management strategy based on context\n",
+        ],
+        summary: "Effectively delivers projects through a team\n",
+      },
+      {
+        examples: [
+          "Oversaw technical delivery of a complex new tool, focusing on value by interfacing with two other departments\n",
+          "Negotiatiated with marketing, legal, and appropriate functions to surface launch risks at project start\n",
+          "Spent a small amount of time contributing comments to several EDDs per month, many notes saving those teams weeks or even months of effort\n",
+        ],
+        signals: [
+          "Finds ways to deliver requested scope faster, and prioritizes backlog\n",
+          "Manages dependencies on other projects and teams\n",
+          "Develops new project management strategies and socializes them across teams\n",
+        ],
+        summary:
+          "Effectively delivers complex projects through a large team, and positively influences project directions across many teams\n",
+      },
+      {
+        examples: [
+          "Coordinated cross department alignment & delivery of engineering project\n",
+          "Delivered infrastructure migration requiring contributions from all guilds, on time\n",
+          "Defined technical approach for the company's next strategic focus\n",
+        ],
+        signals: [
+          "Considers external constraints and business objectives when planning\n",
+          "Leads teams of teams, and coordinates effective cross-functional collaboration\n",
+          "Owns a key company metric\n",
+        ],
+        summary: "Manages major company pushes delivered by multiple teams\n",
+      },
+    ],
+  },
   MENTORSHIP: {
     description:
       "Provides support to colleagues, spreads knowledge, and develops the team outside formal reporting structures",
     displayName: "Mentorship",
     id: "MENTORSHIP",
+    category: "C",
     milestones: [
       {
         examples: [
@@ -413,153 +490,82 @@ export let tracks: Tracks = {
       },
     ],
   },
-  PROJECT_OWNERSHIP: {
+  COMMUNICATION: {
     description:
-      "Delivers well-scoped programs of work that meet their goals, on time, to budget, harmoniously",
-    displayName: "Project Ownership",
-    id: "PROJECT_OWNERSHIP",
+      "Listens effectively, then shares the right amount of information with the right people, at the right time.",
+    displayName: "Communication",
+    id: "COMMUNICATION",
+    category: "C",
     milestones: [
       {
         examples: [
-          "Delivered a new feature within an existing app view, based on EDD\n",
-          "Scoped and implemented a simple new GET endpoint\n",
-          "~~[draft] Delivered payment history dashboard~~\n",
+          "~~[draft] Updated The Watch before running a backfill~~\n",
+          "Keeps status of Jira tickets up to date\n",
+          "Writes well-structured commit messages\n",
         ],
         signals: [
-          "Estimates small tasks accurately\n",
-          "Delivers tightly-scoped projects efficiently\n",
-          "Writes effective technical specs outlining approach\n",
-        ],
-        summary: "Effectively delivers single tasks\n",
-      },
-      {
-        examples: [
-          "Wrote the EDD for a major phase of a long-running project\n",
-          "Scoped and implemented an endpoint with a novel resource nesting scheme\n",
-          "Added new library and introduced it to the guild\n",
-        ],
-        signals: [
-          "Researches and effectively documents a technical decision between multiple alternatives\n",
-          "Balances pragmatism and polish appropriately\n",
-          "Defines and hits interim milestones\n",
-        ],
-        summary: "Effectively delivers individual projects\n",
-      },
-      {
-        examples: [
-          "Reduced variability of completion estimate by refactoring and frontloading risky project phases \n",
-          "Completed launch checklist proactively for well-controlled rollout\n",
-          "Facilitated project kickoff meeting to get buy-in\n",
-        ],
-        signals: [
-          "Delegates tasks to others appropriately\n",
-          "Integrates business needs into project planning\n",
-          "Chooses appropriate project management strategy based on context\n",
-        ],
-        summary: "Effectively delivers projects through a team\n",
-      },
-      {
-        examples: [
-          "Oversaw technical delivery of a complex new tool, focusing on value by interfacing with two other departments\n",
-          "Negotiatiated with marketing, legal, and appropriate functions to surface launch risks at project start\n",
-          "Spent a small amount of time contributing comments to several EDDs per month, many notes saving those teams weeks or even months of effort\n",
-        ],
-        signals: [
-          "Finds ways to deliver requested scope faster, and prioritizes backlog\n",
-          "Manages dependencies on other projects and teams\n",
-          "Develops new project management strategies and socializes them across teams\n",
+          "Communicates project status clearly and effectively\n",
+          "Collaborates with others with empathy\n",
+          "Asks for help at the appropriate juncture\n",
         ],
         summary:
-          "Effectively delivers complex projects through a large team, and positively influences project directions across many teams\n",
+          "Communicates effectively with close stakeholders when called upon, and incorporates constructive feedback",
       },
       {
         examples: [
-          "Coordinated cross department alignment & delivery of engineering project\n",
-          "Delivered infrastructure migration requiring contributions from all guilds, on time\n",
-          "Defined technical approach for the company's next strategic focus\n",
+          "Received and integrated critical feedback on a rushed PR positively\n",
+          "Created cross-team Slack channel for a new Spirit page\n",
+          "Collected comments from domain experts on an EDD and incorporated them into the chosen approach\n",
         ],
         signals: [
-          "Considers external constraints and business objectives when planning\n",
-          "Leads teams of teams, and coordinates effective cross-functional collaboration\n",
-          "Owns a key company metric\n",
-        ],
-        summary: "Manages major company pushes delivered by multiple teams\n",
-      },
-    ],
-  },
-  QUALITY: {
-    description:
-      "Embodies and promotes practices to ensure excellent quality products and services",
-    displayName: "Quality",
-    id: "QUALITY",
-    milestones: [
-      {
-        examples: [
-          "Caught a bug before it went live\n",
-          "Landed non-trivial PR with only style-related comments\n",
-          "Wrote hermetic tests for the happy and sad cases\n",
-        ],
-        signals: [
-          "Tests new code thoroughly, both locally, and in production once shipped\n",
-          "Writes tests for every new feature and bug fix\n",
-          "Writes clear comments and documentation\n",
-        ],
-        summary: "Delivers consistently good quality work",
-      },
-      {
-        examples: [
-          "Requested tests for a PR when acting as reviewer\n",
-          "Cleared a sticky set of Sentry errors\n",
-          "",
-        ],
-        signals: [
-          "Consistently writes readable, easily testable, performant code\n",
-          "Adds tests for uncovered areas\n",
-          "Deletes unnecessary code and deprecates proactively when safe to do so\n",
+          "Practises active listening, seeking to understand before being understood.\n",
+          "Ensures stakeholders are aware of current blockers\n",
+          "Chooses the appropriate tools for accurate and timely communication\n",
         ],
         summary:
-          "Increases the robustness and reliability of codebases, and devotes time to polishing products and systems",
+          "Communicates with the wider team appropriately, focusing on timeliness and good quality conversations",
       },
       {
         examples: [
-          "~~[draft] Improved PRB to run the same volume of tests faster~~\n",
-          "Integrated linter and static analyzer for PRs\n",
-          "~~[draft] Created fixture system for visual quality~~\n",
+          "Directed team response effectively during several outages\n",
+          "Gave a substantial EPDD-wide presentation on the Charges Service\n",
+          "Created a new collaborative doc to automate status updates from the team\n",
         ],
         signals: [
-          "Implements systems that enable better testing\n",
-          "Gives thoughtful code reviews as a domain expert\n",
-          "Adds tooling to improve code quality\n",
-        ],
-        summary: "Improves others' ability to deliver great quality work",
-      },
-      {
-        examples: [
-          "Added code coverage reporting to iOS CI pipeline\n",
-          "~~[draft] Iterated repeatedly to develop Getaround's underlines solution~~\n",
-          "~~[draft] Defined and oversaw plan for closing Heartbleed vulnerability~~\n",
-        ],
-        signals: [
-          "Builds systems so as to eliminate entire classes of programmer error\n",
-          "Focuses the team on quality with regular reminders\n",
-          "Coordinates on-call priorities and projects\n",
+          "Resolves communication difficulties between others\n",
+          "Anticipates and shares schedule deviations in plenty of time\n",
+          "Attends to inclusive communication practices on their team\n",
         ],
         summary:
-          "Advocates for and models great quality with proactive actions, and tackles difficult and subtle system issues",
+          "Proactively shares information, actively solicits feedback, and facilitates communication for multiple stakeholders",
       },
       {
         examples: [
-          "~~[draft] Negotiated resources for Fix-It week with exec team~~\n",
-          "~~[draft] Instituted and ensured success of a 20% time policy~~\n",
-          "~~[draft] Started The Watch~~\n",
+          "Lead off-site workshop on interviewing\n",
+          "Wrote Getaround's growth framework and rationale\n",
+          "Aligned the entire organization around a meeting or process format\n",
         ],
         signals: [
-          "Defines policies for the engineering org that encourage quality work\n",
-          "Identifies and eliminates single points of failure throughout the organization\n",
-          "Secures time and resources from execs to support great quality\n",
+          "Communicates project risk and tradeoffs skillfully and with nuance\n",
+          "Contextualizes and clarifies ambiguous direction and strategy for others\n",
+          "Negotiates resourcing compromises with other teams\n",
         ],
         summary:
-          "Enables and encourages the entire organization to make quality a central part of the development process",
+          "Communicates complex ideas skillfully and with nuance, and establishes alignment within the wider organization",
+      },
+      {
+        examples: [
+          "Managed themes and speakers for half year check-in company offsite\n",
+          "Created the communication plan for a substantial restructuring of team technical scopes\n",
+          "Presented to the board about key company metrics and projects\n",
+        ],
+        signals: [
+          "Defines processes for clear communication for the entire team\n",
+          "Shares the right amount of information with the right people, at the right time\n",
+          "Develops and delivers plans to execs, the board, or outside investors\n",
+        ],
+        summary:
+          "Influences outcomes at the highest level, moves beyond mere broadcasting, and sets best practices for others",
       },
     ],
   },
@@ -568,6 +574,7 @@ export let tracks: Tracks = {
       "Supports the emotional well-being of group members in difficult times, and celebrates their successes",
     displayName: "Wellbeing",
     id: "WELLBEING",
+    category: "C",
     milestones: [
       {
         examples: [
@@ -705,7 +712,7 @@ export const totalPointsFromMilestoneMap = (
 export const categoryColorScale = d3
   .scaleOrdinal()
   .domain(categoryIds)
-  .range(["#b01aa7", "#b01aa7", "#b01aa7", "#b01aa7"]);
+  .range(["#b01aa7", "#FFC25A", "#28C58A", "#b01aa7"]);
 
 export const titles = [
   { label: "Engineer I", minPoints: 0, maxPoints: 16 },

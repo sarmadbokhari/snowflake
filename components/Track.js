@@ -79,7 +79,7 @@ class Track extends React.Component<Props> {
                         style={{
                           border: `4px solid ${
                             milestone === currentMilestoneId
-                              ? "#000"
+                              ? "#390446"
                               : isMet
                               ? categoryColorScale(track.category)
                               : "#eee"

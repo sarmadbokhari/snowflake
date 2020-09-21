@@ -34,7 +34,7 @@ class TrackSelector extends React.Component<Props> {
           }
           .track-selector-value {
             line-height: 50px;
-            width: 50px;
+            width: 100px;
             text-align: center;
             background: #eee;
             font-weight: bold;
@@ -44,7 +44,7 @@ class TrackSelector extends React.Component<Props> {
           }
           .track-selector-label {
             text-align: center;
-            font-size: 9px;
+            color: #333;
           }
         `}</style>
         <tbody>
@@ -68,7 +68,7 @@ class TrackSelector extends React.Component<Props> {
                   border:
                     "4px solid " +
                     (trackId == this.props.focusedTrackId
-                      ? "#000"
+                      ? "#390446"
                       : categoryColorScale(tracks[trackId].category)),
                   background: categoryColorScale(tracks[trackId].category),
                 }}

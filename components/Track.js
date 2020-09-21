@@ -11,18 +11,17 @@ type Props = {
 };
 
 const milestoneTitleMap = {
-  0: "No score",
-  1: "Associate",
-  2: "Engineer",
-  3: "Senior",
-  4: "Staff",
-  5: "Principal",
+  0: "❔",
+  1: "🛵",
+  2: "🚗",
+  3: "🏎️",
+  4: "🚄",
+  5: "🚀",
 };
 
 class Track extends React.Component<Props> {
   render() {
     const track = tracks[this.props.trackId];
-    console.log({ track, id: this.props.trackId });
     const currentMilestoneId = this.props.milestoneByTrack[this.props.trackId];
     const currentMilestone = track.milestones[currentMilestoneId - 1];
     return (

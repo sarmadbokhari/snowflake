@@ -95,7 +95,10 @@ const stateToHash = (state: SnowflakeAppState) => {
   if (!state || !state.milestoneByTrack) return null;
   const values = trackIds
     .map((trackId) => state.milestoneByTrack[trackId])
-    .concat(encodeURI(state.name), encodeURI(state.title));
+    .concat(encodeURI(state.name));
+  // .concat(encodeURI(state.name), encodeURI(state.title));
+
+  console.log({ values });
   return values.join(",");
 };
 

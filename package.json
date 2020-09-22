@@ -1,8 +1,7 @@
 {
-  "name": "eng-growth",
+  "name": "getaround-eng-growth",
   "version": "0.0.1",
-  "main": "function.js",
-  "repository": "https://github.com/Medium/eng-growth",
+  "repository": "https://github.com/sarmadbokhari/snowflake",
   "license": "MIT",
   "dependencies": {
     "airtable": "^0.10.0",
@@ -15,19 +14,19 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   },
+  "engines": {
+    "node": "10"
+  },
   "scripts": {
     "dev": "next",
     "export": "next build && next export",
     "flow": "flow",
     "build": "next build",
-    "deploy": "yarn build && cross-env NODE_ENV=production firebase deploy --only functions,hosting"
+    "deploy": "yarn build && cross-env NODE_ENV=production"
   },
   "devDependencies": {
     "@babel/preset-flow": "^7.0.0",
     "firebase": "^7.21.0",
     "flow-bin": "^0.57.2"
-  },
-  "engines": {
-    "node": "10"
   }
 }

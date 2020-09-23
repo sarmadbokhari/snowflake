@@ -1,13 +1,6 @@
-## ⚠️ Heads up: Medium isn’t using this tool anymore, but you’re welcome to!
-[Read more about our current thinking around engineer growth](https://medium.engineering/engineering-growth-at-medium-4935b3234d25).
-
 # Snowflake
 
-Snowflake is Medium's tool for planning and supporting our engineers' career development. You can read more
-about how we use this tool in our [growth framework documentation](https://medium.com/s/engineering-growth-framework).
-Our growth tool is hosted [publicly](https://snowflake.medium.com).
-
-![The Lannisters send their regards](https://i.imgur.com/e9DYLBr.png)
+Snowflake was Medium's tool for planning and supporting our engineers' career development, which they open-sourced. Getaround has adapted it for use as its own Growth Framework (with substantial modifications).
 
 ## Contributions
 

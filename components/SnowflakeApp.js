@@ -163,7 +163,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             fill: #b01aa7;
           }
         `}</style>
-        <div style={{ margin: "19px auto 0", width: 200 }}>
+        <div style={{ margin: "19px auto 0", width: 103 }}>
           <Wordmark />
         </div>
         <a
